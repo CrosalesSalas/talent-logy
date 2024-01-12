@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>La Aventura en el Bosque Encantado</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    text-align: center;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .historia {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="historia" id="historia">
+    Te encuentras caminando por un bosque encantado, lleno de árboles centenarios y criaturas misteriosas. En tu camino, escuchas un susurro proveniente de un árbol milenario. ¿Qué decides hacer?
+  </div>
+  <button onclick="opcionA()">Acercarte al árbol milenario</button>
+  <button onclick="opcionB()">Ignorar el susurro y seguir caminando</button>
+</div>
+<script>
+  function opcionA() {
+    document.getElementById('historia').innerText = 'Te acercas al árbol milenario y descubres una entrada secreta. Al entrar, encuentras un cofre antiguo lleno de monedas de oro y un mapa que indica la ubicación de un tesoro escondido.';
+    document.getElementById('historia').innerHTML += '<br><button onclick="continuar()">Continuar</button>';
+  }
+
+  function opcionB() {
+    document.getElementById('historia').innerText = 'Decides ignorar el susurro y seguir caminando por el bosque. Sin embargo, te encuentras con un puente roto. ¿Qué decides hacer a continuación?';
+    document.getElementById('historia').innerHTML += '<br><button onclick="continuar()">Continuar</button>';
+  }
+
+  function continuar() {
+    document.getElementById('historia').innerText = 'La historia ha continuado. Puedes seguir explorando las opciones para descubrir diferentes caminos y finales en esta aventura emocionante.';
+  }
+</script>
+</body>
+</html>
