@@ -1,0 +1,16 @@
+/* Estilos para la clase "caja" */
+.caja {
+  width: 200px; /* ancho */
+  height: 100px; /* altura */
+  background-color: lightblue; /* color de la caja */
+  margin: 10px; /* espacio entre las cajas, ajusta según sea necesario */
+}
+
+/* Estilos para la clase "centro" */
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% del alto de la ventana */
+  margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+}

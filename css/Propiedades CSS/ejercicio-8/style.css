@@ -1,0 +1,25 @@
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse; /* Combina los bordes de celda en uno solo */
+    width: 100%;
+}
+
+/* Estilos para las celdas del encabezado */
+th {
+    border: 2px solid #ddd; /* Borde sólido de 2px con color */
+    background-color: #f2f2f2; /* Color de fondo alternativo para el encabezado */
+    padding: 8px; /* Ajusta el relleno según sea necesario */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para las filas de datos */
+td {
+    border: 2px solid #ddd; /* Borde sólido de 2px con color */
+    padding: 8px; /* Ajusta el relleno según sea necesario */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para filas alternadas con diferentes colores de fondo */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo alternativo para filas pares */
+}

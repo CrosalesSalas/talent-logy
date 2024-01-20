@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galería de Imágenes</title>
+</head>
+<body>
+    <div class="gallery">
+        <div class="thumbnail" onclick="openLightbox('descarga.jpeg')">
+            <img src="descarga.jpeg" alt="Imagen 1">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('descarga2.jpeg')">
+            <img src="descarga2.jpeg" alt="Imagen 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('descarga3.jpeg')">
+            <img src="descarga3.jpeg" alt="Imagen 3">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('descarga4.jpeg')">
+            <img src="descarga4.jpeg" alt="Imagen 3">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Imagen en Lightbox">
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>

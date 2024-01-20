@@ -1,0 +1,14 @@
+/* Estilos para el botón */
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave para la sombra de caja */
+}
+
+/* Sombra de caja al hacer clic */
+button:active {
+    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.3); /* Sombra de caja al hacer clic */
+}
